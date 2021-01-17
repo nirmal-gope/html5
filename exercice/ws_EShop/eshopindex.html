@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--partie SEO-->
+    <meta name="description" content="Integration d'un site web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5194382582.js" crossorigin="anonymous"></script>
+
+    <title>Workshop E-shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header><!--la partie haut du site-->
+
+        <div class="topbar"><!--la partie qui contient les liens en haut(partie gris)-->
+            <div class="contenu_topbar">
+                <p>Satisfait ou rembourse</p>
+                <p>Besoin d'aide ? <i class="fa fa-phone fa-flip-horizontal"></i>O1 28 02 29 45 <em>(Appel gratuit)</em></p>
+                <p>Paiement Securise</p>
+            </div>
+          
+
+        </div>
+        <div class="header_center"><!--debut div avec classe header-->
+            <div class="logo"><!--la partie du logo-->
+                <img src="assets/img/logo3.png" alt="">
+                <h5><em>De l'elegance pour votre habitat !</em></h5>
+            </div>
+            <div class="outils"><!--la div de 2 eme partie-->
+                <div class="devis">
+
+                    <img src="assets/img/devis.png" alt="">
+                    <h5>Devis personnalise</h5>
+                    <p><a href="">Devis gratuit sous 24h</a></p>
+
+                </div>
+                <div class="compte">
+                   <div class="mon_compte">
+                        <h5>Mon Compte</h5>
+                        <p><a href="#">Se connecter</a></p>
+                   </div>
+                  
+                    <img src="assets/img/compte1.png" alt="">
+
+                </div>
+                <div class=" conseils">
+                    <img src="assets/img/conseils.png" alt="">
+                    <h5>Conseils et Questions</h5>
+                    <p><a href="#">Rappel automatique gratuit</a></p>
+
+                </div>
+                <div class="panier">
+                    <div class="mon_panier">
+                          <h5>Mon panier</h5>
+                     <p><a href="">0 € - 0 produit(s)</a></p>
+                    </div>
+                  
+                    <img src="assets/img/panier.png" alt="" width="40">
+
+                </div>
+
+
+            </div>
+
+
+        </div><!--fin de classe header-->
+        <!--nav>ul>li*10>a-->
+        <nav>
+            <ul class="navbar">
+                <li><a href=""><i class="fa fa-home fa-2x"></i></a></li>
+                <li><a href="">Carrelage</a></li>
+                <li><a href="">Parquet</a></li>
+                <li><a href="">Exterieur</a></li>
+                <li><a href="">Mur</a></li>
+                <li><a href="">Accessoires</a></li>
+                <li><a href="">Pose</a></li>
+                <li><a href="">Sanitaires</a></li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <form method="post" action="index.html"><!--je déclare que je vais creer un formulaire-->
+                        <input type="text" name="search" placeholder="Recherche un produit" >
+                        <!-- il ya deux facons de faire les boutons -->
+                        <!--  <input type="submit" value="click" />--> 
+                        <button type="submit"> <i class="fa fa-search"></i> </button>
+
+                    </form>
+                </li>
+            </ul>
+        </nav>
+
+    </header><!--fin de header-->
+    <main><!--debut corps du site main-->
+        <div class="container">
+            <div class="slider"><!--debut slider-->
+                <div class="slider_left"><!--partie qui contient le carousel-->
+                    <div class="container-slider">
+                        <img src="assets/img/slider1.jpg" alt="">
+
+                    </div>
+                    <div class="controls"><!--contient la partie du controles le slider(fleche suivant, precedent ....)-->
+                        <p class="cont_left"><i class="fas fa-chevron-left"></i></p>
+                        <p class="cont_right"><i class="fas fa-chevron-right"></i></p>
+
+                    </div>
+
+
+                </div>
+                <div class="slider_right"><!--partie qui contient les miniatures-->
+                    <div class="carrelage">
+                        <img src="assets/img/carrelage3.jpg" alt="">
+                        <p class="etiquette"><a href="#">Voir les carrelages</a></p>
+
+                    </div>
+                    <div class="parquet">
+                        <img src="assets/img/carrelage13.jpg" alt="">
+                        <p class="etiquette"><a href="#">Voir les parquets</a></p>
+                    </div>
+
+                </div>
+
+
+            </div><!--fin slider-->
+            <div class="produits">
+
+                <div class="produit">
+                    <div class="promo">
+                        <img src="assets/img/promo.png" alt="">
+                    </div>
+                    <div class="product_1">
+                           <img src="assets/img/carrelage12.jpg" alt="">
+                    </div>
+                 
+                    <h5>Carreaux de ciment imitations</h5>
+                    <p class="prix">19,99 € TTC / m²</p>
+                    <p>
+                        <a href="" class="details"> <i class="fa fa-search"></i> Voir le produit</a>
+                        <a href="" class="card"><i class="fas fa-shopping-cart"></i> Ajouter au panier</a>
+                    </p>
+                    <p class="product_devis"><a href=""><i class="fas fa-file-invoice"></i> Demande de devis personnalise</a></p>
+
+                </div>
+            </div>
+         </div>
+    </main><!--fin de main-->
+    <footer><!--le footer du site-->
+        <div class="footer_1">
+            <div class="adresse"></div>
+            <div>
+                    <p class="e-li-title">Adresse :</p>
+                    <p class="e-desc">
+                        Avenue Leclerc
+                        <br>
+                        75015 Paris
+                    </p>
+            </div>
+        </div>
+        <div class="footer_2">
+            <div class="telephone"></div>
+            <div>
+                    <p class="e-li-title">telephone :</p>
+                    <p class="e-desc">
+                        Avenue Leclerc
+                        <br>
+                        75015 Paris
+                    </p>
+            </div>
+        </div>
+        
+    </footer><!--fin de footer-->
+   
+</body>
+</html>

@@ -1,0 +1,15 @@
+.contenu{
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to left,red,blue);/* background linear gradient permet de creer des background degradé*/
+}
+.contenu_1{
+    width: 300px;
+    height: 200px;
+    background: radial-gradient(red,green);
+}
+.contenu_2{
+    width: 400px;
+    height: 300px;
+   background: url("../img/eye.png")100%;
+}

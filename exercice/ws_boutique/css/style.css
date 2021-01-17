@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+    font-family: Arial;
+    background-image: url("../img/fond.png");
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 4px 3px gray;
+}
+/* bloc top header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+/* bloc logo */
+.logo{
+    display: flex;
+    margin: 10px;
+}
+.logo h1{
+    font-size: 40px;
+    font-style: italic;
+}
+.logo_img{
+    margin-right: 10px;
+}
+.logo_img img:hover{
+    transform: rotate(360deg);
+}
+.logo_img img{
+    transition: ease-out 2s;
+}
+.logo p{ /*pour slogan*/
+    color: rgb(255, 113, 198);
+    font-size: 12px;
+    text-align: right;
+    text-transform: capitalize;
+}
+/* block 'Besoin d'aide' à côté de logo */
+.contact{
+    color: rgb(103, 220, 255);   
+}
+.contact h2{
+    font-size: 25px;
+    font-weight: 200;
+}
+.contact span{
+    font-style: italic;
+    color:gray;
+    font-size: 12px;
+    
+}
+.phone_icon{
+    background: url(../img/aide.png)no-repeat;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+/* bloc mon compte et panier */
+.compte{
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    padding-top:5px;
+    background-color:rgb(103,220,255);
+}
+.compte a{
+    text-decoration: none;
+    color: white;
+    padding:2px 10px;
+}
+.panier{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #fff;
+}
+/* debut de top nav bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 14px; 
+}
+.navbar a{
+    text-decoration: none;
+    color:white; 
+}
+.navbar li{
+    padding: 10px;
+    width: 20%;
+    background-color: rgb(103, 220, 255);
+    text-align: center;
+}
+.navbar li:hover{
+    background-color: rgb(273, 113, 198);
+    transition: ease-out 0.2s;
+}
+.navbar li:first-child{
+    background-color: rgb(255, 113, 198);
+}
+/* debut de body text bloc */
+section{
+    display: flex;
+}
+.paiement.propos.services, h4{
+    color: rgb(103, 220, 255);
+    margin-bottom: 10px;
+}
+.paiement,.propos,.services{
+    padding:2px 15px;
+    margin:15px 0;
+}
+.paiement,.services{
+    width: 25%;
+}
+.paiement img{
+    margin-top:10px;
+}
+.propos{ /* pour 'Qui sommes nous?' bloc*/
+    width: 50%;
+    border-left:1px solid lightgray;
+    border-right:1px solid lightgray;
+}
+.livraison,.echange{
+    display: flex;
+    align-items: center;
+}
+.livraison{
+    margin-bottom:20px;
+}
+.livraison span, .echange span{
+ margin-left: 15px;
+ margin-top: 10px;
+}
+/* 3eme part de body text bloc 'box shadow partie' */
+.features{ /* pour boîte unique*/
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 3px gray;
+}
+.features h5{ /* pour boîte unique title*/
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+.product{ /* pour boîte unique image et text*/
+    display: flex;
+    padding: 20px;
+}
+.product p{ /* dans boîte unique texte détaillé du produit*/
+    width: 70%;
+    text-align: justify;
+    margin-left: 5px;
+}
+.link{
+    text-align: right;
+    padding: 10px;
+}
+.link a{
+    color:rgb(103, 220, 255);
+    text-decoration: none;
+}
+
+/* debut de footer bloc */
+footer{
+    background-color:rgb(103, 220, 255);;
+    padding: 10px;
+    margin-top: 15px;
+}
+.footer_navbar{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footer_navbar a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 12px;
+    margin-left: 5px;
+}

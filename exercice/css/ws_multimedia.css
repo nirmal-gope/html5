@@ -1,0 +1,40 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    width: 200px;
+    display: block;
+    padding: 10px 20px;
+    background-color: pink;
+    text-align: center;  
+}
+nav li{
+    list-style-type: none;
+}
+.niveau1{
+    display: flex;
+    justify-content: center;
+}
+
+.niveau1 a:hover{
+    background-color:lightblue;
+}
+.niveau2{
+    display: none; 
+}
+.niveau2 a{
+    text-align: left;
+}
+.niveau1 li:hover .niveau2{
+    display: block;
+}

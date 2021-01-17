@@ -1,0 +1,51 @@
+body{
+    margin: o auto;
+    width: 1200px;
+    text-align: center;
+}
+.gauche{
+    background-color: #5585ff;
+    height: 500px;
+    width: 320px;
+    display: inline-block;
+    border: 1px solid #5585ff;
+}
+.droite{
+    background-color: #5585ff;
+    height: 500px;
+    width: 320px;
+    display: inline-block;
+    border: 1px solid #5585ff;
+}
+header,footer{
+    height: 100px;
+    line-height: 100px;
+    /*display none; permet de cacher un element*/
+}
+.gauche,.droite,.milieur{
+    line-height: 400px;
+}
+.milieur{
+    display: inline-block;
+    height: 500px; 
+}
+header{
+    background-color: red;  
+}
+footer{
+    background-color: yellow;
+    position: relative;
+    bottom: 100px;
+    width: 555px;
+    display: inline-block;
+}
+.milieur div{
+    width: 109px;
+    background-color: teal;
+    display: inline-block;
+    height: 450px;
+    border: 1px solid black;
+}
+p{
+    margin: 0px;
+}

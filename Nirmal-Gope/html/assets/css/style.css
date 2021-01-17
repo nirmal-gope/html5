@@ -1,0 +1,301 @@
+/* RESET CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.orange {
+    color: orange;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/*------------------------------------------ haut du site --------------------------------------------------------*/
+
+header {
+    background-image:linear-gradient(45deg, 
+        transparent 48%, rgb(0,0,0,0.1) 48%,
+        transparent 50%, rgb(0,0,0,0.1) 52%,
+        transparent 52%, rgb(0,0,0,0.1) 52%,
+        transparent 52%, transparent),
+        linear-gradient(-45deg, 
+        transparent 48%, rgb(0,0,0,0.1) 48%,
+        transparent 50%, rgb(0,0,0,0.1) 52%,
+        transparent 52%, rgb(0,0,0,0.1) 52%,
+        transparent 52%, transparent);
+
+    background-size: 25px 25px;
+
+    height: 200px;
+}
+
+.entete {
+    width: 1052px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 30px;
+    position: relative;
+    justify-content: space-between;
+}
+
+#logo_slogan {
+    display: flex;
+}
+#logo_slogan img{
+    margin-left: 20px;
+}
+
+#slogan {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 20px;
+    
+}
+
+#liseret {
+    position:absolute;
+    bottom:0;
+    background: linear-gradient(to top, orange, transparent);
+    width: 7px;
+    height: 150px; 
+}
+
+#droite {
+    width: 50%;
+}
+
+.panier {
+    border: 1px solid black;
+    background: rgba(100, 100, 100, 0.2);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.entree {
+    display: flex;
+    align-items: center;
+}
+
+.entree span {
+    padding-left: 30px;
+}
+
+.user {
+    text-align: right;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.liens {
+    height: 45px;
+}
+
+ul.menu {
+    position: absolute;
+    bottom: 0;
+    padding-top: 40px;
+    list-style: none;
+    display: flex;
+}
+
+ul.menu li:first-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul.menu li {
+    padding: 20px 35px 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+#catalogue {
+    background: white;
+    width: 1052px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 60px;
+}
+
+#catalogue img {
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding-top: 10px;
+    background: rgba(30, 30, 30);
+    min-height: calc(100vh - 500px);
+}
+
+.single_article {
+    width: 40%;
+    height: 500px;
+    margin: 15px;
+    text-align: center;
+}
+
+.nom {
+    padding: 10px 0;
+    background: white;
+    position: relative;
+    top: -42px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.barre {
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.vente {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 60px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.achat {
+    display: block;
+    text-decoration: none;
+    padding: 10px 0;
+    background: black;
+    color: white;
+    width: 50%;
+}
+
+.price {
+    color: orange;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.liseret2 {
+    height: 2px;
+    background: linear-gradient(to right, transparent 40%, transparent 60%, black);
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: -15px;
+}
+
+.promo {
+    background: rgba(60, 60, 60);
+    background-image: linear-gradient( 45deg, 
+                      transparent 48%, rgba(255, 255, 255, 0.1) 48%, 
+                      transparent 50%, rgba(255, 255, 255, 0.1) 52%, 
+                      transparent 52%, transparent), 
+                      linear-gradient( -45deg, transparent 48%,
+                    rgba(255, 255, 255, 0.1) 48%, transparent 50%, 
+                    rgba(255, 255, 255, 0.1) 52%, 
+                      transparent 52%, transparent);
+    background-size: 10px 10px;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 70px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: relative;
+    top: 45px;
+    left: 35%;
+    box-shadow: 2px 2px 2px 2px
+                inset rgba(0, 0, 0, 0.3),
+                -1px -1px 1px 1px 
+                inset rgba(255, 255, 255, 0.3);
+}
+
+/* Pour assurer que le footer soit toujours en bas de page */
+
+footer {
+    background: rgb(60, 60, 60);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+#footer-grey-bar {
+    height: 20px;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+}
+
+footer nav {
+    background-color: white;
+    width: 40%;
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+    margin: 0 auto;
+    padding-top: 25px;
+    border: 1px solid lightgray;
+    border-radius: 0px 0px 5px 5px;
+}
+
+footer nav ul  {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer nav i {
+    margin: 0px 10px;
+    color: gray;
+}
+
+.vignettes {
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+
+.vignette p {
+    text-align: center;
+    padding: 10px;
+    font-size:0.8rem;
+}
+
+hr {
+    width: 25%;
+    margin: 0 auto;
+    border-color: grey;
+    box-shadow: 0 1px 1px 1px black;
+}
+
+.socials {
+    padding: 30px 0;
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright {
+    padding: 10px 0;
+}

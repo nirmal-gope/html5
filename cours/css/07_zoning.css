@@ -1,0 +1,48 @@
+body{
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid black;
+}
+header,footer{
+    background-color: #8e3557;
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+}
+nav{
+    background-color: #4a1A2c;
+    height: 30px;
+
+}
+section{
+    background-color: white;
+    height: 400px;
+    padding: 20px;
+    
+    
+}
+.a,.b,.c,.d{
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+.a{
+    background-color: brown;
+
+}
+.b{
+    background-color: cadetblue;
+   
+}
+.c{
+    background-color: chartreuse;
+    
+}
+.d{
+    background-color: blueviolet;
+   
+}
+footer{
+    clear: both;
+}

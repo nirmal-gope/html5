@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body,div,section,p,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+    border:0;
+}
+body{
+   font-family:Verdana,sans-serif;
+    font-size:15px;
+}
+img{
+    width:100%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul a{
+    color:gray;
+    text-decoration: none;
+    margin-left:30px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display";
+}
+.nav_bar a:hover{
+color:lightblue;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 9px 17px 2px rgba(0,0,0,0.9);
+    padding:15px;
+    position:sticky;
+    top:0;
+    background-color: #fff;
+    z-index:1;
+
+}
+header h1{
+    color:gray;
+    letter-spacing: 5px;
+}
+
+.slider{
+    background-image: url("../img/fondant.jpg");
+    background-repeat: no-repeat;
+     background-size: cover; 
+     background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bloc_right{
+    width: 400px;
+    background:rgba(255,255,255,0.4);
+    padding:15px;
+    border:5px solid rgba(255,255,255,0.6);
+    height: 230px;
+}
+.main {
+    width: 1100px;
+    margin:0 auto;
+    margin-top:30px;
+}
+.bloc_about{
+    border:1px solid lightblue;
+    position:relative;
+    right:100px;
+    background-color:#fff;
+    top:50px;
+    width:50%;
+    padding:30px;
+    text-align: right;
+}
+.section_1{
+    display: flex;
+}
+.bloc_about h2{
+    border: 1px solid lightblue;
+    position: relative;
+    bottom: 60px;
+    width: 80%;
+    left: 6%;
+    padding: 15px;
+    background-color: white;
+    letter-spacing: 3px;
+   
+}
+.bloc_about h5,.bloc_menu h5{
+    letter-spacing: 4px;
+}
+.bloc_about p{
+    line-height: 35px;
+}
+.section_2{
+    display: flex;
+    margin-top:100px;
+}
+.bloc_menu{
+    border:1px solid lightblue;
+    padding: 30px;
+    position: relative;
+    top:40px;
+    left:100px;
+    background-color: #fff;
+}
+.button_reserver a{
+    text-decoration: none;
+    background-color: lightblue;
+    color:#fff;
+    padding:12px;
+  
+}
+.button_reserver{
+    text-align: center;
+}
+.bloc_menu h2{
+    line-height: 30px;
+    letter-spacing: 5px;
+}
+.bloc_menu h5,.bloc_menu p{
+    line-height: 40px;
+}
+footer{
+    background-color:lightgray;
+    text-align: center;
+    padding:10px;
+    margin-top:80px;
+}
+footer a {
+    color:gray;
+    text-decoration: none;
+}
+mark{
+    background-color: lightblue;
+}

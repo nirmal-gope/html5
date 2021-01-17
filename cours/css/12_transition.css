@@ -1,0 +1,33 @@
+body{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: center;
+}
+ul{
+    width: 16em;
+}
+li{
+    list-style: none;
+    font-size: 1.5em; /* 1em=16px*/
+    border: 1px solid #ccc;
+    padding: 1em;
+}
+.conteneur{
+    display: flex;
+    margin-top: 5em;
+    align-items: flex-end;
+}
+.right ul li:first-child{
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+.right ul{
+    padding: 0;
+}
+.right ul:hover{
+   transform: scale(1.5);
+   transition: ease-in-out 2s;
+   background: linear-gradient(white, lightblue);
+}

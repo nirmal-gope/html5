@@ -1,0 +1,51 @@
+body{
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+table{
+    margin: 20px;
+    border-collapse: collapse;
+}
+td{
+    width: 40px;
+    height: 40px;
+}
+.nblue{
+    background-color: rgb(51, 3, 49);
+}
+.maroon{
+    background-color: maroon;
+}
+.red{
+    background-color: rgb(172, 11, 11);
+}
+.yellow{
+    background-color: lightgoldenrodyellow;
+}
+.lblue{
+background-color: lightblue;
+}
+.green{
+    background-color: green;
+}
+.dgreen{
+    background-color: darkgreen;
+}
+.yellow2{
+background-color: darkkhaki;
+}
+.sblue{
+    background-color: rgb(27, 167, 223);
+}
+.yellow3{
+    background-color: rgb(216, 197, 27);
+}
+.white{
+    background-color: white;
+}
+.sblue2{
+    background-color: rgb(76, 129, 150);
+}
+.sblue3{
+    background-color: rgb(44, 209, 214);
+}

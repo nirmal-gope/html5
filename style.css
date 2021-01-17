@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;*/
+    /*font: inherit;*/
+    vertical-align: baseline;
+}
+body{
+    background-image: url("../img/concrete-texture.png");
+}
+header{
+    display: flex;
+    /*justify-content: space-around; Comme cette fonction n'est pas sdatrisfaisante, on la modifie en la positionnant à space-between*/ 
+    justify-content: space-between;
+    background-color: #2c3e50;
+    /*align-items: center;*/
+    padding: 15px 0;/* cela signifie padding de 15px en haut et en bas, et pas de padding à gauche et à droite.*/
+}
+header h1{
+font-family: 'Anton',sans-serif;
+color: #2980b9;
+font-size: 45px;
+line-height: 115px;/* ceci permet de centrer verticalement le titre "Mon premier site en html:css, sans toucher les icônes FaceBook et Instagram. Nota : on aurait tout aussi pu utiliser un margin-bottom.*/
+font-weight: 400;
+letter-spacing: 1px;
+}
+
+.social a{/* on cible le lien"a" pour modifier la taille et la couleur des deux icônes FaceBook et Instagram*/
+    color: #10828C;
+font-size: 30px;/* On augmente ici la taille des icônes*/
+display: block;/* les liens étant de type inline, ils sont alignés. On doit donc les passer en mode bloc pour que les icônes Facebook et Instagram se positionnent l'une en dessous de l'autre */
+}
+.logo{
+margin-left: 100px;;
+}
+.social{
+    margin-right: 24px;
+}
+.slogan{
+    flex-grow: 2;/* C'est une propriété enfant flex qui permet à l'élément de prendre tout le reste de l'espace disponible */
+    margin-left: 10%;
+}
+.nav_bar{/* mise sur la totalité de la page avec espace à gauche et à droite plus grand que si on utilise space-between ou space-around */
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;/* On peut supprimetr les puces de la liste dans ul ou bien dans li*/
+    width: 85%;
+    margin: 0 auto;
+}
+
+.nav_bar a{/*on va travailler sur les liens qui sont dans la zone de classe nav_bar, pour supprimer le soulignement des liens, et changer la couleur du texte, changer la police */
+text-decoration: none;
+color: white;
+font-size: 20px;
+font-family: 'Oswald';
+
+}
+nav{
+    background-color: #2980b9;
+    padding: 10px 0;/* Padding de 10px en haut et en bas de chaque élément de la nav, aucun padding à gauche et à droite : ceci pour bien positionner les éléments de la na
+    height: 70px;
+    border-bottom: 8px solid #6ACAFC;
+    /*text-align: center;*/
+}
+.nav_bar li{
+    border: 2px solid #6ACAFC;
+    border-radius: 10px 0;
+    padding: 3px 10px;
+    transition:0.3s;/* pour raffiner*/
+}
+.nav_bar li:hover{/* lorsque l'on passe le curseur au-dessus de l'élément li, on applique une modification de couleur du background*/
+    /* Pour que l'appartition du background-color ne soit pas brutale et pour qu'il disparaisse quand on enlève le curseur de dessus l'élément, on met une transition sur li  avant l'application du hover.*/
+    background-color: #A6D6C3;
+}
+li.active {
+    /* ici on veut mettre un background sur les li, qui, dans nav_bar li on déjà un background-color à #6ACAFC
+     Il y a donc nécessité d'une gestion de priorité quand on appelle deux fois le même élément*/
+     background-color: #2c3e50;
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    background-color:#A6D6C3;
+    padding: 10px 50px;
+    
+    font-family: 'oswald';
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+footer{
+    background-color: #2980b9;
+    height: 45px;
+}
+/************css pour page image ****************/
+h2{
+/*pour créer background transparent, avec rgba */
+background-color: rgba(178,178,178,0.3);/* créer un background transparent */
+color: #2c3e50;
+font-size: 35px;
+padding: 30 20 50;
+text-shadow: 1px 1px 1px gray;/* créer un shadow sur le texte*/
+}
+
+.image_fond{
+    background-image:url(..//img/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image_fond p{
+    
+    margin: 120px 50px 180px 50px;
+    background-color: rgba(255,255,255,0.6);
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 21px;
+}
+.image_fond_h5{
+    font-size: 18px;
+    font-family: serif;
+    margin-top:15px;
+    color: #2c3e50;
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px gray;
+}.animation_img img{
+    border: 4px solid #fff
+}
+.animation_img{
+    background-color: rgba(178,178,178,0.3);
+}

@@ -1,0 +1,17 @@
+h1{
+background-color: blueviolet;
+}
+a{
+    background-color: burlywood;
+}
+.block{
+    display: block;
+
+}/*classe block pour changer le type d'effichage*/
+.inline{
+    display: inline;
+
+}/*classe inline pour changer le type d'effichage en inline*/
+span{
+    background-color: coral;
+}

@@ -1,0 +1,52 @@
+form{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 20px;
+    border: 5px solid blue;
+    border-radius: 5px;
+    background-color: burlywood;
+    cursor: pointer;
+    font-weight: bold;
+}
+label{
+    color: blue;
+    text-size-adjust: bold;
+}
+.p1{
+    color: rebeccapurple;
+}
+.check{
+    margin-left: 40px;
+}
+.p3{
+    margin-left: 40px;
+}
+.check2{
+    margin-left: 60px;
+}
+
+.button1{
+   color: blue;
+   background-color: lightblue;
+   padding: 5px;
+   border-radius: 5px;
+   font-weight: bold;
+}
+.submit{
+    color: rgb(48, 22, 4);
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.pb{
+    text-align: center;
+   
+}
+legend{
+    background-color: gold
+}
+fieldset{
+    border: 2px solid;
+
+}

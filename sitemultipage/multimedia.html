@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mon premier site html-ccss multipage">
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CLemonada%7COswald" rel="stylesheet">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="logo">
+        </div>
+        <div class="slogan">
+            <h1>Mon Premier site en HTML/CSS</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav_bar">
+            <li><a href="texte.html">Texte</a></li>
+            <li><a href="selecteur.html">Selecteur</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="position.html">Position</a></li>
+            <li><a href="zoning.html">Zoning</a></li>
+            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="liste.html">Liste</a></li>
+            <li><a href="lien.html">Lien & menu</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+            <li class="active"><a href="#">Multimedia</a></li>
+            <li><a href="animation.html">Animation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Multimedia</h2>
+            <div class="videoFond">
+                <video controls autoplay muted loop>
+                <source src="assets/video/videoBackground.webm" type="video/webm">
+                </video>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magni quae corporis perferendis, suscipit fugit? Suscipit expedita alias amet quod? Dolore veritatis impedit necessitatibus accusamus cupiditate cumque consectetur vel assumenda?
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Insérer une video avec iframe</h2>
+            <div class="v_iframe">
+                <iframe width="1000" height="515" src="https://www.youtube.com/embed/MHYWgf3VqoY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> 
+        </section>
+        <section>
+            <h2>Audio</h2>
+            <h4>Format mp3</h4>
+            <audio src="assets/audio/son.mp3" controls autoplay ></audio>
+        </section>     
+    </main>
+    <footer>      
+    </footer>
+    <script src="https://kit.fontawesome.com/0498bcf658.js" crossorigin="anonymous"></script>
+</body>
+</html>

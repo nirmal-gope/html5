@@ -1,0 +1,106 @@
+body{
+    background-color: #E2E2E2;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+    width: 1024px;
+}
+.city{
+    color: rgb(122, 17, 96);
+    line-height: .5;
+}
+.logo{
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+nav a{
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.hr1{
+    width: 50%;
+}
+.assiette{
+    display: flex;
+    align-items: center;
+    margin-top: 2em; 
+}
+.assiette1{
+    border: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+.assiette2 h4{
+    font-style: italic;
+}
+.hr3{
+    margin-top: -20px;
+}
+.hr2{
+    width: 190%;
+    position: relative;
+    right: 180px;
+    margin-top: -10px;
+}
+.assiette2{
+    text-align: right;
+    line-height: 0.2;
+    padding-left: 100px;
+    font-size: 14px;
+}
+.note{
+    background-color: #000000;
+    color: white;
+    display: inline;
+    padding: 2px 30px 2px 5px;
+    text-decoration: none;
+
+}
+p{
+    font-style: italic;
+}
+.salle1{
+    padding: 20px;
+}
+.service2{
+    padding: 20px;
+}
+.dressage1{
+    padding: 20px;
+}
+.gout2{
+    padding: 20px;
+}
+.service,.salle,.dressage,.gout,.footer1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+footer{
+    line-height: normal;
+
+    
+}
+.footer1{
+    justify-content: center;
+    margin-top: 3em;  
+    opacity: .5;
+}
+.city2{
+    position: absolute;
+}
+.paris{
+    position: absolute;
+    margin-top: 60px;
+}
+.footer2{
+    font-style: italic;
+    
+}
+

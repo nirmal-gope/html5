@@ -1,0 +1,29 @@
+.navbar{
+    background-color: orange !important;
+}
+.navbar-nav a{
+    color: white !important;
+}
+a.btn_orng{
+    background-color: orange;
+    border: 1px solid orange;
+}
+a.btn_orng:hover{
+    background-color: red;
+    border: 1px solid red;
+}
+body{
+    background-color: #fff;
+}
+.jumbotron{
+    background-color: #fff;
+}
+h6{
+    font-size: 30px;
+}
+.card a{
+    color: orange;
+}
+ul.nav li:nth-child(2) a,ul.nav li:nth-child(3) a{
+    color: orange;
+}

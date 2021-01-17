@@ -1,0 +1,55 @@
+body{
+    width: 1200px;
+    height: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    background-color: brown;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    color: white;
+    line-height: 50px;
+    z-index: 1; /*z-index permet de donner un ordre d'affichage pour les elements qui sont superposés*/
+}
+.item1{
+width: 250px;
+height: 100px;
+background-color: rgba(201, 201, 34, 0.5);
+position: absolute;
+right: 0px;
+top: 150px;
+/*les propprietes left, right, top, bottom son rrlative a la propriete position*/
+/*comme on peut utiliser une seule propriete, on peut aussi utiliser 3 propriete en meme temps*/
+}
+.item2{
+width: 250px;
+height: 100px;
+background-color: rgba(201, 34, 90, 0.3);
+position: absolute;
+bottom: 0px;
+right: 0px;
+}
+.item3{
+    width: 250px;
+    height: 100px;
+    background-color: rgba(240, 198, 13, 1);
+    position: relative;
+    top: 150px;
+    left: 300px;
+}
+.item4{
+        width: 250px;
+        height: 100px;
+        background-color: rgba(67, 233, 17, 0.2);
+}
+.block_2{
+    border: 1px solid black;
+    width: 400px;
+    position: relative;
+    left: 100px;
+    top: 250px;
+}

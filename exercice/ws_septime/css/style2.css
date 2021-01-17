@@ -1,0 +1,108 @@
+div,h1,h2,h3,h4,h5,h6,p,section,body{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #f6f6f7;
+    font-family: "Cormorant Garamond", serif;
+}
+header{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-style: italic;
+    font-weight: bold;
+}
+.assiette img{
+    border-radius: 50%;
+}
+section{
+    display: flex;
+    align-items: center;
+}
+.text_assiette{
+    width: 40%;
+    text-align: right;
+    position: relative;
+    right: 150px;
+}
+.text_assiette h2{
+    font-style: italic;
+}
+.text_assiette p{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 13px;
+}
+section h3{
+    text-transform: uppercase;
+    font-style: 2em;
+    letter-spacing: 4px;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+}
+.salle p,.service p,.dressage p,.gout p{
+    font-style: italic;
+    margin-top: 5px;
+    font-weight: bold;
+    font-style: 16px;
+    margin-bottom: 20px;
+}
+.salle,.service,.dressage,.gout{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.salle span,.service span, .dressage span, .gout span{
+    background-color:black;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+.salle span i,.service span i,.dressage span i,.gout span i{
+    font-size: 10px;
+    vertical-align: 2px;
+}
+footer{
+text-align: center;
+width: 45%;
+margin: 0 auto;
+margin-top: 3em;
+}
+.septime{
+    font-weight: 3em;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+footer p:nth-child(5){
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.city_guide{
+    position: relative;
+    bottom: 6em;
+    font-style: 16px;
+}
+footer img{
+    opacity: 0.5;
+
+}
+footer

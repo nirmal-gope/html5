@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+body{/*mettre une image en font d'ecran sur body(cad sur la totalité la page)*/
+    background-image: url("../img/concrete-texture.png");
+    /* font-family: serif; */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: #2c3e50;
+    padding:15px 0;
+    /*
+    padding:15px; il va faire un padding de 15px sur les 4 cotes(top,right,bottom,left)
+    padding:15px 4px; il va faire un padding de 15px en haut et en bas(top,bottom) et il va faire padding de 4 px a gauche et a droite(left et right)
+    padding:top right bottom left;(sui le sens de l'aiguille d'une montre)
+    */
+}
+header h1{
+    font-family:'Anton',sans-serif;
+    color:#2980b9;
+    font-size:45px;
+    line-height: 115px;/*on peut faire margin-top:*/
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.social a{
+    color:#10828C;
+    font-size:30px;
+    display: block;
+    line-height: 45px;
+}
+.logo{
+    margin-left:100px;
+    
+}
+.social {
+    margin-right:24px;
+}
+.slogan{
+    flex-grow: 2;/*c'est une propriete enfant flex qui permet au l'élement de prendre tout le reste de l'espace disponible */
+    margin-left: 10%;
+}
+.nav_bar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;/*on peut supprimer les puces de la liste dans ul ou bien dans li*/
+    width: 73%;
+    margin:0 auto;
+}
+.nav_bar a{/*selectionner les a qui sont a l'interieur de .nav_bar*/
+    text-decoration: none;/*pour supprimer la soulaignement*/
+    color:#fff;
+    font-size:20px;
+    font-family: 'oswald';
+ 
+}
+nav{
+    background-color:#2980b9;
+    padding:10px 0;
+    border-bottom:8px solid #6ACAFC;
+  
+}
+.nav_bar li{
+    border:2px solid #fff;
+    background-color: #6ACAFC;
+    border-radius: 10px 0;
+    padding:3px 10px;
+    transition: 0.3s;/*pour raffiner l'effet de l'apparition de background-color*/
+}
+.nav_bar li:hover{/*lorsque je passe la souris au dessus de l'élement je fais ces propriets */
+background-color:#A6D6C3 ;
+}
+li.active{
+    background-color: #2c3e50;
+}
+main{
+    width:1200px;
+    margin:0 auto;
+}
+.structure{
+    background-color: #A6D6C3;
+    padding: 10px 50px;
+    margin-top:20px;
+    margin-bottom:20px!important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:'oswald';
+}
+footer{
+    background-color: #2980b9;
+    height: 45px;
+}
+/**********css pour page image************/
+h2{
+    /* pour creer background transparent */
+    background-color: rgba(178,178,178,0.3);/*creer un background transparent*/
+    color: #2c3e50;
+    font-size: 35px;
+    padding: 30px 20px 50px;
+    text-shadow: 1px 1px 1px grey;/*créer un effet shadow sur le texte*/
+}
+.image_fond{
+    background-image:url("../img/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:10px 50px;
+ 
+}
+.image_fond p{
+    
+    margin: 199px 50px 348px 50px;
+    background-color: rgba(255,255,255,0.6);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 21px;
+}
+.image_fond h5{
+    font-size: 18px;
+    font-family: serif;
+    margin-top: 15px;
+    color: #2c3e50;
+    margin-left: 10px;
+    text-shadow: 1px 1px 2px grey;
+}
+.animation_img img{
+    border:4px solid #fff;
+}
+.animation_img{
+    background-color: rgba(178,178,178,0.3);
+}
+.pictures{
+    display: flex;
+    justify-content: space-between;
+   /* jc:sb +tab */
+}
+.picture1 img:hover{/*fait moi ce style si la souris passe au dessus de l'élement*/
+    transform:rotate(-10deg);
+    border:10px solid #fff; 
+}
+.picture1 img{
+    transition: 1s;/*on met transition en dehors d hover pour visualiser l'animation dans les deux sens(cad lorsque je passe ma souris et lorsque je quitte aussi )*/
+}
+.picture3 img:hover{
+    transform: rotate(-360deg);/*on ajoute la signe - devant le degres pout trourner dans le sens inverse de l'aiguille de montre*/
+    border:10px solid #fff;
+}
+.picture3 img{
+    transition: 1s;
+}
+.absolute{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position:absolute;/*la position absolute supprime l'element completement du flux web*/
+    left: 111px;
+    top: 197px;
+}
+.relative{
+    width: 400px;
+    height: 200px;
+    background-color:#2D5C7F;
+    position:relative;/*la position relative ne supprime pas l'élement du flux web*/
+    left:250px;
+}
+.relative .carre_vert{
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+    position:absolute;
+    top:0;
+    right:0;
+}
+/* css pourcentage*/
+.trente{
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    background: #3C1B1F;
+    color: #F6E1B5;
+    font-weight: bold;
+}
+.cinquante{
+    width: 50%;
+    padding: 20px;
+    font-size: 22px;
+    background: #B21E4B;
+    color: #E2BF81;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.cent{
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    background: #E2BF81;
+    color: #B21E4B;
+    font-weight: bold;
+    margin-top: 7px;
+}
+/*csss partie float*/
+.float{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    background: #F8D771;
+    border: 2px solid darkred;
+}
+.clear{
+    clear:both;
+}
+.dernier{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    background: #F8D771;
+    border: 2px solid darkred;
+}
+
+/***************la partie css de la page animation********************/
+.infoBulle{
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin:50px auto;
+    background-color: #444;
+     box-shadow: 1px 1px 54px #222 inset;
+     padding-top:20px;
+}
+.infoBulle a{
+    color:#ccc;
+    text-decoration: none;
+}
+.infoBulle p{
+    margin-top:30px;
+}
+.infoBulle span{
+    position: relative;
+    color: #09c;
+    top: 7px;
+    background-color: rgba(0,0,0,.9);
+    padding: 10px 15px;
+    border-radius: 3px;
+    left: 262px;
+     opacity: 0; 
+     transform: scale(0) rotate(-15deg); 
+    transition: 0.5s;
+    display: block;
+    width: 40%;
+}
+.infoBulle a span::before{
+    content: "";/**/
+    /*ces bordures qui vont géneres un triangles*/
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: relative;
+    bottom: 37px;
+
+}
+.infoBulle a:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(0);
+    transition: 1s;
+
+}
+.imgeffets{
+    width: 250px;
+    margin: 43px auto;
+
+}
+.imgeffets img{
+    width: 100%;
+    transition: 0.8s cubic-bezier(0,3,.4,1) ;
+    z-index:1;
+    position:relative;
+}
+.zone_1,.zone_2{
+    display: flex;
+}
+.zone_1 div:first-child,.zone_2 div:first-child{
+    margin-right:10px;
+}
+.zone_1{
+    margin-bottom:6px;
+}
+    .imgeffets img:hover{
+        position:relative;
+        transform:scale(1.5);/*scale(X,Y)*/
+        z-index:2;
+        box-shadow:0 0 10px #000;/*creer un effet flou autour du bloc*/
+       
+}
+.imgeffets:hover  img:not(:hover){/*je selectionne img qui n'ont pas de pseudo element hover lorsque je passe la souris au dessus de tout le bloc imgeffets*/
+    filter:grayscale(1) blur(5px)/*grayscale() mettre l'element en niveau de gris, blur() permet de faire l'effet sur l'image*/
+}
+ 
+
+/********************Css pour la partie multimedia*****************************/
+.videoFond video{
+    width: 100%;
+}
+.videoFond p{
+    font-size: 17px;
+    background-color: rgba(255,255,255,0.8);
+    width: 500px;
+    position: absolute;
+    padding: 30px;
+    top: calc(50% - 110px);
+    left: calc(50% - 250px);
+}
+.videoFond{
+    position: relative;
+}
+.v_iframe{
+    justify-content: center;
+    display: flex;
+   
+}
+/********************css pour formulaire*********************/
+form{
+    background-color: #2c3e50;
+    width: 80%;
+    margin:0 auto;
+    padding:10px;
+    color:#fff;
+}
+form label{
+    display: inline-block;
+    width: 149px;
+}
+form p{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+label[for="orange"],label[for="fraise"],label[for="poire"]{
+width: 50px;
+}

@@ -1,0 +1,42 @@
+p{
+    /* ici je met le code css */
+    /* la forme d'une propriété*/
+    /* nom propriete:valeur_proriete;*/
+    /*un exemple*/
+    color: rgb(160, 38, 38); background-color: rgb(232, 232, 241); text-align:center; text-transform: capitalize; font-size: 20px; font-family: sans-serif; line-height: 40px;
+
+
+}
+h1{
+    color: rgb(223, 135, 21); text-align: center; font-size: 100px; font-family: cursive;
+}
+h4{
+    color: darkcyan; text-align: right;
+}
+h2, h3, h5{
+    color: darksalmon; 
+    background-color: darkseagreen;
+
+}
+ul{
+    color: deeppink;
+}
+ol{
+    color: blue;
+}
+img{border-radius: 100%;
+    
+}
+.premier_p{
+    color: blueviolet; text-align: justify; background-color: chartreuse; line-height: 30px;
+}
+.second_p{
+    color: red; text-align: center; background-color: darkkhaki;
+}
+.image_1{
+    padding-right: 30px; padding-top: 30px; max-width: 100%; height: auto; display: block; margin-left: 0px; margin-right: 80; background-color: seagreen; 
+}
+.image_2{
+    padding-left: 30px; padding-top: 30px; max-width: 100%; height: auto; display: block; margin-left: 80; margin-right: 0px; background-color: seagreen; 
+    
+}

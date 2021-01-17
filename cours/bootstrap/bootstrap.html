@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--l'appel du fichier css persennel-->
+    <!--l'appel du fichier personnel se fait en dernier apres l'appel du fichier css bootstrap, c'est tres important-->
+    <!--l'appel des polices se faitent avec deux manières soit avec lien dans head soit avec @import dans le fichier css, on utilise l'une des deux-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style.css">
+    <title>Les affichages flex et fonctionnalites</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="d-flex flex-column-reverse bd-highlight border border-danger mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+          <div class="d-flex flex-row-reverse bd-highlight border border-danger">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>les classes justify content</h3>
+        <div class="d-flex flex-row justify-content-around bd-highlight border border-danger mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+          <div class="d-flex flex-row justify-content-center bd-highlight border border-danger">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 align_item">
+        
+        <div class="d-flex flex-row justify-content-center align-items-stretch bd-highlight border border-danger mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+          <h3>flex-column align-items-center</h3>
+          <div class="d-flex flex-column align-items-center bd-highlight border border-danger">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 flex-grow-1 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+    </div>
+</div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"> </script>
+</body>
+</html>

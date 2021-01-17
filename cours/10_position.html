@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Positions: relative, absolute, fixed</title>
+    <link rel="stylesheet" href="css/10_position.css">
+</head>
+<body>
+<!--les positions permet de gérer plus librement des elements dans la page par apport au autres elements il ya plusieurs valeurs posible pour position, absolute, relative, fixed, static, sticky -->
+<!--position relative, il permet de positionner un element par rapport a son emplacement ou bien par rapport a d'autres elements -->
+<!--position absolute permet de positioner des elements dans la page par rapport au point zero point (x,y) le point qui est a gauche en haut-->
+<!--la position fixed permet de coller un element(reste fixe tout en scrollant la page en bas)-->
+<!--la syntaxe de position
+position: relative/absolute/fixed...
+left: 100px; permet de decaler l'element de 100px a partir de gauche.
+bottom: 150px; permet de decaler l'element de 150px a partir de bas.
+top: 250px; permet de decaler l'element de 250px a partir d'haut.
+right: 300px; permet de decaler l'element de 300px a partir de droite.-->
+<header>
+    Hello World!
+</header>
+<div>
+    <div class="item1">position absolute division 1</div>
+    <div class="item2">position absolute division 2</div>
+</div>
+<div class="block_2">
+    Block 2 Parent
+    <div class="item3">position relative division 3:</div>
+    <div class="item4">position relative division 4</div>
+</div>
+</body>
+</html>

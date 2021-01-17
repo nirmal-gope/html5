@@ -1,0 +1,49 @@
+/*
+selecteur{
+    propriete1: valeur1
+    propriete2: valeur2
+}   
+*/
+section p{
+    color: red;
+}
+/* selecteur simple avec le nom de la balise*/
+h1{
+    color: blueviolet;
+    background-color: cadetblue;
+}
+section p span{
+    font-size: 30px;
+    color: black;
+}
+section h2:first-child{
+    background-color: green;
+}
+section p:nth-child(2){
+    background-color: yellow
+}
+section p:nth-child(6){
+    background-color: greenyellow;
+}
+section p:last-child{
+    background-color: goldenrod;
+}
+section p:nth-child(7),section p:nth-child(9){
+    font-size: 25px;
+    color: blue;
+}
+section p:nth-child(even){
+    border: 2px solid black;
+}
+section p:nth-child(odd){
+    border: 1px solid gray;
+    text-align: center;
+}
+.list_1 ul li:nth-child(2){
+    color: red;
+    background-color: rosybrown;
+}
+/* ul.list_2 ca vaut dire la balise ul qui contient une classe list_2*/
+ul.list_2 li{
+    border: 2px solid blue;
+}

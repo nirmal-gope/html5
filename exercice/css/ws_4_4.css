@@ -1,0 +1,52 @@
+body{
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+    color: white;
+}
+p{
+    margin: 0px;
+}
+main{
+    background-color: cyan;
+    padding: 10px;
+}
+nav{
+    background-color: lightslategrey;
+    height: 20px;
+}
+header,footer{
+    height: 50px;
+    padding-top: 40px;
+}
+header{
+    background-color: burlywood;
+}
+footer{
+    background-color: silver;
+}
+.coleur_1 .zone{ 
+    background-color: peachpuff;
+}
+.coleur_2 .zone{ 
+    background-color: #7a9e7a;
+
+}
+.coleur_3 .zone{
+    background-color: green;
+}
+.coleur_4 .zone{
+    background-color: hotpink;
+}
+.zone_Z{
+    width: 580px;
+    display: inline-block;
+    
+}
+.zone{
+    width: 285px;
+    display: inline-block;
+    height: 100px;
+    border: 1px solid;
+    padding-top: 80px;
+}

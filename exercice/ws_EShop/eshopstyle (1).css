@@ -1,0 +1,273 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;/*pour garder la meme taille*/
+}
+body{
+    font-family: sans-serif;
+    color:#333;
+
+}
+.topbar{
+    background-color: #555;
+    color:#fff;
+    padding: 5px 0;
+   
+}
+header{
+    background-color: #F8F8F8;
+}
+.contenu_topbar{
+    width: 1200px;
+    margin:0 auto;/*sois au centre de page*/
+    display: flex;
+    justify-content: space-between;
+}
+.contenu_topbar p{
+    font-weight: bold;
+    font-size: 13px;
+}
+.header_center{
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.devis{
+    float:left;
+    width: 50%;
+}
+.compte{
+    float:right;
+    /* width: 50%; */
+}
+.conseils{
+    float:left;
+    clear:both;
+    width: 50%;
+}
+.panier{
+    /* width: 50%; */
+    float:right;
+}
+.devis a,.compte a,.conseils a,.panier a {
+    color:#333;
+    font-style: italic;
+    font-size:12px;
+    text-decoration: none;
+}
+.devis img,.conseils img{
+    float:left;
+    margin-right: 10px;
+}
+
+.outils{
+    width: 35%;
+}
+.mon_compte,.mon_panier{
+    float:left;
+}
+nav .navbar{
+    list-style-type: none;
+    display: flex;
+    width: 1200px;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    padding: 7px 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;/*changer le type d'affichage de la balise a en type block pour qu'il prendre la taille avec le padding */
+    font-size: 12px;
+}
+nav{
+    border-top:1px solid #e6e6e6;
+    background:linear-gradient(to bottom,#FAFAFA,#ECECEC);
+}
+.navbar li{
+    border-left:1px solid lightgray;
+    text-align:center;
+}
+.navbar i{
+    font-size: 18px;
+}
+.navbar li:first-child{/*je selectionne le prmier enfant de ul*/
+    border-left:none;
+
+}
+.navbar input{
+    font-size: 11px;
+    height: 25px;
+    border: 2px inset #fff;
+    float: left;
+    padding-left: 4px;
+    
+    font-style: italic;
+}
+.navbar button{
+   background-color: #7a7a7a; 
+   border:none;
+   color:#fff;
+   padding:5px 5px 3px 5px;
+   border-radius: 3px;
+}
+.navbar button i{
+    font-size: 15px;
+}
+.container{
+    width: 1200px;
+    margin:25px auto;
+}
+.slider
+{
+display: flex;
+justify-content: space-between;
+}
+.etiquette a{
+color:#fff;
+text-decoration: none;
+font-size: 13px;
+font-weight: bold;
+
+}
+.etiquette{
+background-color: #F62775;
+text-align: center;
+padding: 5px 0;
+position: relative;
+bottom: 142px;
+}
+.slider_right img{
+    width: 100%;
+}
+.carrelage,.parquet{
+    height: 226px;
+    overflow: hidden;
+}
+.parquet{
+    margin-top:25px;
+}
+.slider_right{
+    width: 28%;
+}
+.container-slider img{
+    width: 100%;
+}
+.container-slider{
+    width: 106%;
+
+}
+.cont_left,.cont_right{
+
+color: #fff;
+padding:17px;
+background: #F62775;
+display: inline-block;
+}
+
+.cont_left{
+position: relative;
+bottom:280px
+}
+.cont_right{
+    position: relative;
+    bottom: 280px;
+    left: calc(100% - 45px);
+   
+    
+}
+footer{
+    background-color: gray;
+    width: 1200px;
+    margin:0 auto;
+    padding:30px;
+    color:white;
+}
+.adresse{
+    background-image: url(../img/sprites.png);
+    width: 43px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position-y: -101px;
+
+}
+.footer_1,.footer_2{
+display: flex;
+}
+.telephone{
+    background-image: url(../img/sprites.png);
+    width: 43px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position-y: -138px;
+}
+.produit{
+    text-align: center;
+    border:1px solid lightgray;
+    font-weight: bold;
+}
+.produits{
+    display: flex;
+}
+.produits img{
+    width: 100%;
+}
+.product_1{
+    height: 250px;
+    overflow: hidden;
+   
+}
+.prix{
+    color:#F62775;
+}
+.details{
+         /* display: block; */
+    background-color: #2A2A2A;
+    color: white;
+    padding: 5px 36px;
+    /* font-size: large; */
+    float: left;
+    text-decoration: none;
+}
+.card{
+    text-decoration: none;
+    background-color: #F62775;
+    color: white;
+    padding: 5px 24px;
+    float: left;
+}
+.product_devis{
+    background-color: rgb(184, 184, 184);
+    padding: 5px;
+    margin-top:6px;
+    clear:both;
+}
+.product_devis a{
+    color:white;
+    text-decoration: none;
+}
+.promo{
+    position:absolute;
+    
+}

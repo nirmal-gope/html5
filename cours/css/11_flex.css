@@ -1,0 +1,65 @@
+.item1{
+    background-color: lightsalmon;
+    width: 80px;
+    height: 80px;
+}
+.item2{
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    flex-basis: 250px;
+}
+.item3{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    flex-grow: 2;
+
+}
+
+.contenu_1{
+    border: 1px solid orange;
+    height:  400px;
+    display: flex;
+    flex-direction: row; /*la valeur row est par default row, les valeurs possibles((column,row,row-reverse,column-reverse)*/
+    justify-content: space-between; /*la valeur ici est flex-start, le valeurs possibles ici(center, flex-start,flex-end,space-between,space-around)*/
+     /*align-items permet d'aligner l'element sur l'hauteur du conteneur seulment si l'ement n'a pas de height de base (height n'est pas definit)*/
+    align-items: stretch;/*la valeur par default est flex-start, les valeurs disposibles(flex-end, flex-start, center, stretch, baseline)*/
+    
+}
+.contenu_2{
+    border:1px solid orange;
+    height: 200px;
+    display:flex;
+    flex-direction:row-reverse;/*la valeur par defaut est row, les valeurs possibles(column,row,row-reverse,column-reverse..)*/
+    justify-content: center;
+    align-items: center;
+}
+.contenu_3{
+    border:1px solid orange;
+    height: 400px;
+    display:flex;
+    flex-direction:column;/*la valeur par defaut est row, les valeurs possibles(column,row,row-reverse,column-reverse..)*/
+    justify-content: space-between;
+}
+.contenu_4{
+    border:1px solid orange;
+    height: 200px;
+    display:flex;
+    flex-direction: column-reverse;/*la valeur par defaut est row, les valeurs possibles(column,row,row-reverse,column-reverse..)*/
+}
+h1 {
+    background-color: #3A4454;
+    color: whitesmoke;
+    padding: 1em;
+}
+h2 {
+    background-color: #6B737F;
+    color: white;
+    padding: 0.5em;
+}
+h3 {
+    background-color: #C2B2B4;
+    color: #610F7F;
+    padding: 0.25em;
+}

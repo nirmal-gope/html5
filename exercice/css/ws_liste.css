@@ -1,0 +1,10 @@
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+section ul li:nth-child(1n){
+    background-color: lightseagreen;
+} /*(odd/1n)*/
+section ul li:nth-child(2n){
+    background-color: chocolate;
+}/*(even/2n)*/

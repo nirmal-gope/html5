@@ -1,0 +1,36 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid lightgrey;
+    
+}
+.row{
+    display: flex;
+    border: 1px solid white;
+    
+}
+.col_1 {width: 8.333333%;}
+.col_2 {width: 16.666666%;}
+.col_3 {width: 25%;}
+.col_4 {width: 33.333333%;}
+.col_5 {width: 41.666666%;}
+.col_6 {width: 50%;}
+.col_7 {width: 58.333333%;}
+.col_8 {width: 66.666666%;}
+.col_9 {width: 75%;}
+.col_10 {width: 83.333333%;}
+.col_11 {width:91.666666%;}
+.col_12 {width: 100%;}
+.rose{
+    background-color: pink;
+}
+.blue{
+    background: lightblue;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color:lightgreen;
+}

@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: relative;
+    top: 60px;
+    z-index: 10;
+    
+}
+.nav-link{
+    color: black !important;
+}
+form{
+    background-color:rgba(255,255,255,0.5);
+
+}
+
+
+@media screen and (max-width: 992px){
+
+   .display-sm-md{
+       display: none;
+       
+   }
+   .btn-payer{
+       position: relative;
+       top: 30%;
+   }
+   .footer-img img{
+    width: 100%;
+    float: right;
+    
+}
+
+}
+
+@media screen and (min-width:992px){
+
+    .footer-img img{
+        width: 40%;
+        float: right;
+        
+    }
+    
+
+}

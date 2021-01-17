@@ -1,0 +1,67 @@
+body{
+    width: 1200px;
+    margin: 0 auto;
+    height: 1200px;
+}
+.carre{
+    width: 100px;
+    height: 100px;
+}
+body .carre:first-child{
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+body .carre:nth-child(2){
+    background-color: blue;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+body .carre:nth-child(4){
+    background-color: green;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+body .carre:last-child{
+    background-color: yellow;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.rectangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 100px;
+    border-color: #ef00ff transparent transparent transparent;
+    position: sticky;
+    left: calc(50% - 100px); /* calc fonction permet de calculer la taille en fonction de la taille de l'ecran disponsible tout en soustrayant la taille du block, pour bien centrer l'element*/
+    top: 0px;
+    margin-top: 100px;
+    z-index: 2;
+}
+.conteneur{
+    height: 1200px;
+}
+.rond,.ombre{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightblue;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: 300px;
+    
+}
+.rond{
+    background-color: lightblue;
+    z-index: 1;
+}
+.ombre{
+    background-color: gray;
+    top: 305px;
+}
